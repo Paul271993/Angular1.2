@@ -1,0 +1,9 @@
+.card {
+    border: 5px solid;
+    border-color: rgb(224, 165, 93);
+}
+
+.oscuro{ 
+    background-color: #1f1f1f; 
+    color: #f1eded; 
+}

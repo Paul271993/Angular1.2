@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title></title>
+</head>
+<body>
+
+   
+   <div class="card" style="width: 18rem;">
+       <img src="../../../assets/gatito.jpg" class="card-img-top" href="">
+       <div class="card-body">
+         <h5 class="card-title">Informacion del gatito</h5> 
+       </div>
+     </div>
+
+     <br>
+
+   
+
+     <h1>Informacion del gatito</h1>
+    <div>
+        Nombre: {{miGato.nombre}} <br>
+        Raza: {{miGato.raza}} <br>
+        Edad: {{miGato.edad}}<br>
+        Biografía: {{miGato.biografia}} <br>
+        <hr>
+        <!-- En un input <input type="text" [value]="miAutor.nombre" /> <br> -->
+        <!-- De otra manera <input type="text" value="{{miAutor.nombre}}"/> <br> -->
+    </div>
+   
+    <!-- <div class = {{miClaseCSS}}> Clase dinamica</div> -->
+    <!-- <div [class] = "miClaseCSS"> Otra forma de asignar mi clase dinamica</div> -->
+    
+    <!-- <div [hidden] = "isHidden"> Elemento aparece y desaparece</div> -->
+    <hr>
+    <div>
+        <p style.color = {{miColor}}>Texto motivacional para que adoptes este gatito de una puta vez y te lo pongo en rojo para ver si la conchetumadre te manda asi un mensaje para que adoptes este gatito que es muy bonito me cago en tu garganta.</p>
+    </div>
+    <!-- <hr>
+        <div> Nombre Completo: {{miAutor.nombre}} {{miAutor.apellido}}</div>
+        <div> Nombre Completo: {{miAutor.nombre + " " + miAutor.apellido}}</div>
+        <div> Nombre Completo: {{nombreCompleto()}}</div>  
+    <hr> -->
+​
+    <!-- <h1>De la Vista al Controlador</h1> -->
+    <div>
+        <input type="text" #boton1>
+        <button (click)=enviar(boton1)>Cambiar el Nombre</button><br>
+        <!-- <input type="text" #boton2>
+        <button on-click=enviar(boton2)>Otra Manera de Cambiar el Nombre</button>    -->
+    </div>
+    
+​
+    <!-- <h1>Two Way Binding</h1>
+    <div>
+        <input type="text" [(ngModel)]="miAutor.nombre"/> {{miAutor.nombre}}
+</div> -->
+
+<button type="button" class="btn btn-dark" onclick="cambiarModo()">Oscuro / Claro</button>
+
+
+    
+</body>
+</html>
